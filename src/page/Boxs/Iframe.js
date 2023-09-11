@@ -1,14 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-export default function Iframe({ setvid, inHistory, videos }) {
-  return (<div>
-    <div className="card">
+export default function Iframe({ setvid, inHistory, iframe }) {
+    return (<div>
+        <div className="card">
             <div className="videoCards">
-                {videos.map((elem, i) => {
+                {iframe.map((elem, i) => {
                     return (
-                        <NavLink to={"/iframe"} className="videoCard" key={i} onClick={() => {
-                            setvid(elem); inHistory(elem);
-                        }}>
+                        <>
                             <div className="preview">
                                 <img src={elem.img} alt="" />
                             </div>
@@ -24,10 +21,10 @@ export default function Iframe({ setvid, inHistory, videos }) {
                                 <p>{elem.author}</p>
                                 <p>{elem.views}</p>
                             </div>
-                        </NavLink>
+                        </>
                     );
                 })}
             </div>
         </div>
-  </div>);
+    </div>);
 }

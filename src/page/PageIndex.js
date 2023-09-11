@@ -57,7 +57,7 @@ export default function PageIndex() {
       link: "https://www.youtube.com/embed/x5RbMNOlVT4?si=m4SYeDRKLcPyViIl"
     },
   ])
-  let [iframe, setIframe] = useState([]);
+  let [iframe, setIframe] = useState([]); 
   function setvid(obj) {
     setIframe([...iframe, obj]);
   }

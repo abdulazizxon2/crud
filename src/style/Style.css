@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.kontener{
+    max-width: 1440px;
+    max-height: 100vh;
+    margin: 0 auto;
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    position: sticky;
+    top: 0;
+}
+.chapnavbar{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+}
+.chapnavbar img{
+    background-color: #212121;
+}
+.ongnavbar{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 16px;
+}
+.fa-youtube{
+    color:red;
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.logo h1{
+    color: white;
+    font-size: 25px;
+}
+.ongnavbar img {
+    color: #212121;
+    border-radius: 50%;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#search{
+    padding: 10px 304px 10px 10px;
+    background-color: #212121;
+    border: 1px solid #303030;
+    outline: none;
+    color: #AAAAAA;
+}
+#lupa{
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    background-color: #303030;
+    color:#FFFFFF;
+}
+#mic{
+    padding: 10px 11px;
+    background-color: #212121;
+    color: #AAAAAA;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.pages{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    gap: 24px;
+    padding-left: 24px;
+}
+.pages i{
+    font-size: 20px;
+}
+.pages:hover{
+    background-color: #303030;
+}
+.box {
+    display:flex;
+}
+.birBox{
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    border-top: none;
+    border-right: none;
+   
+}
+.ikkiBox{
+    display: flex;
+    gap: 12px;
+    padding: 12px 759px 12px 12px;
+    border: 1px solid;
+    border-top:  none;
+    border-left: none;
+}
+.ikkiBox b{
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    border-radius: 20px;
+    color: white;
+   
+}
+.chapBox{
+    padding-top: 10px;
+}
+.ikkiBox b:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+}
+.kantakt {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-left: 24px;
+    padding: 10px;
+}
+.kantakt b{
+    color: white;
+}
+.pages a{
+    color: white;
+    text-decoration: none;
+}
+#check{
+    display: none;
+}
+.card img{
+    width: 200px;
+}
+.videolar{
+    display: grid;
+    grid-template-columns: repeat(5, calc(100% /5 - 10px));
+    align-items: center;
+    justify-content: center;
+   
+}

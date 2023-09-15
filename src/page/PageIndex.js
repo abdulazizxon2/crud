@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Box from "./Box";
-import BirVideo from "./Boxs/BirVideo";
+import BirVideo from "./Boxs/Ikkibox";
 import Iframe from "./Boxs/Iframe";
 
 export default function PageIndex() {
@@ -57,8 +57,9 @@ export default function PageIndex() {
       link: "https://www.youtube.com/embed/x5RbMNOlVT4?si=m4SYeDRKLcPyViIl"
     },
   ])
-  let [iframe, setIframe] = useState([]); 
+  let [iframe, setIframe] = useState([]);
   function setvid(obj) {
+    setIframe(iframe = [])
     setIframe([...iframe, obj]);
   }
   let [history, setHistory] = useState([]);
@@ -69,9 +70,9 @@ export default function PageIndex() {
   }
   return (<div>
     <Routes>
-      <Route path="/" element={<Box />} />
-      <Route path="/iframe" element={<Iframe  iframe={iframe} setIframe={setIframe} />} />
-      <Route path="/birvideo" element={<BirVideo videos={videos} setVidoe={setVideo}setvid={setvid} inHistory={inHistory}/>} />
+      <Route path="/" element={<Box setvid={setvid} videos={videos} />} />
+      <Route path="/iframe" element={<Iframe iframe={iframe} setIframe={setIframe} />} />
+      <Route path="/birvideo" element={<BirVideo videos={videos} setVidoe={setVideo} inHistory={inHistory} />} />
     </Routes>
   </div>);
 }

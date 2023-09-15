@@ -1,18 +1,68 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function UchBox() {
+export default function UchBox({ setvid, videos }) {
     return (<div>
-        <div className="videolar">
+        <div className="cardlar">
             <div className="card">
-                <NavLink to={"/iframe"} onClick={()=>setvid(elem)}>
-                    <img src="./img/logo-og.png" alt="" />
-                </NavLink>
+                <div className="videolar">
+                    {videos.map((elem, i) => {
+                        return (
+                            <div className="videos" key={i}>
+                                <NavLink to={"/iframe"} onClick={() => setvid(elem)}>
+                                    <img src={elem.img} alt="" />
+                                </NavLink>  <div className="nomi">
+                                    <img className="profile" src={elem.profile} alt="" />
+                                    <div className="tit">
+                                        <b>{elem.title}</b>
+                                        <p>{elem.aUthor}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
             <div className="card">
-                <iframe width="200" height="150" src="https://www.youtube.com/embed/xwaA2R7vJm8?si=zluVHhXhAZ21rd4o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <div className="videolar">
+                    {videos.map((elem, i) => {
+                        return (
+                            <div className="videos" key={i}>
+                                <NavLink to={"/iframe"} onClick={() => setvid(elem)}>
+                                    <img src={elem.img} alt="" />
+                                </NavLink>
+                                <div className="nomi">
+                                    <img className="profile" src={elem.profile} alt="" />
+                                    <div className="tit">
+                                        <b>{elem.title}</b>
+                                        <p>{elem.aUthor}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
-
+            <div className="card">
+                <div className="videolar">
+                    {videos.map((elem, i) => {
+                        return (
+                            <div className="videos" key={i}>
+                                <NavLink to={"/iframe"} onClick={() => setvid(elem)}>
+                                    <img src={elem.img} alt="" />
+                                </NavLink>
+                                <div className="nomi">
+                                    <img className="profile" src={elem.profile} alt="" />
+                                    <div className="tit">
+                                        <b>{elem.title}</b>
+                                        <p>{elem.aUthor}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </div>
     </div>);
 }

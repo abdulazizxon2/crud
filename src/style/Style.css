@@ -1,10 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-.kontener{
+
+.kontener {
     max-width: 1440px;
     max-height: 100vh;
     margin: 0 auto;
@@ -12,7 +14,8 @@
     font-family: 'Roboto', sans-serif;
     overflow-y: auto;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,58 +24,69 @@
     position: sticky;
     top: 0;
 }
-.chapnavbar{
+
+.chapnavbar {
     display: flex;
     align-items: center;
     gap: 24px;
     color: white;
 }
-.chapnavbar img{
+
+.chapnavbar img {
     background-color: #212121;
 }
-.ongnavbar{
+
+.ongnavbar {
     display: flex;
     align-items: center;
     color: white;
     gap: 16px;
 }
-.fa-youtube{
-    color:red;
+
+.fa-youtube {
+    color: red;
     font-size: 30px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     gap: 2px;
 }
-.logo h1{
+
+.logo h1 {
     color: white;
     font-size: 25px;
 }
+
 .ongnavbar img {
     color: #212121;
     border-radius: 50%;
 }
-.icons{
+
+.icons {
     display: flex;
     align-items: center;
     gap: 24px;
 }
-#search{
+
+#search {
     padding: 10px 304px 10px 10px;
     background-color: #212121;
     border: 1px solid #303030;
     outline: none;
     color: #AAAAAA;
 }
-#lupa{
+
+#lupa {
     border: none;
     padding: 10px 15px;
     outline: none;
     background-color: #303030;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
-#mic{
+
+#mic {
     padding: 10px 11px;
     background-color: #212121;
     color: #AAAAAA;
@@ -80,7 +94,8 @@
     border-radius: 50%;
     margin-left: 5px;
 }
-.pages{
+
+.pages {
     display: flex;
     color: white;
     font-size: 14px;
@@ -88,43 +103,52 @@
     gap: 24px;
     padding-left: 24px;
 }
-.pages i{
+
+.pages i {
     font-size: 20px;
 }
-.pages:hover{
+
+.pages:hover {
     background-color: #303030;
 }
+
 .box {
-    display:flex;
+    display: flex;
 }
-.birBox{
+
+.birBox {
     width: 200px;
     border: 1px solid rgba(255, 255, 255, 0.255);
     border-top: none;
     border-right: none;
-   
+
 }
-.ikkiBox{
+
+.ikkiBox {
     display: flex;
     gap: 12px;
     padding: 12px 759px 12px 12px;
     border: 1px solid;
-    border-top:  none;
+    border-top: none;
     border-left: none;
 }
-.ikkiBox b{
+
+.ikkiBox b {
     padding: 5px 10px;
     border: 1px solid rgba(255, 255, 255, 0.255);
     border-radius: 20px;
     color: white;
-   
+
 }
-.chapBox{
+
+.chapBox {
     padding-top: 10px;
 }
-.ikkiBox b:hover{
+
+.ikkiBox b:hover {
     background-color: rgba(255, 255, 255, 0.219);
 }
+
 .kantakt {
     display: flex;
     align-items: center;
@@ -132,23 +156,91 @@
     padding-left: 24px;
     padding: 10px;
 }
-.kantakt b{
+
+.kantakt b {
     color: white;
 }
-.pages a{
+
+.pages a {
     color: white;
     text-decoration: none;
 }
-#check{
+
+#check {
     display: none;
 }
-.card img{
+
+.card img {
     width: 200px;
 }
-.videolar{
+.videos{
+    padding: 10px;
+    background-color: black;
+}
+.videolar {
     display: grid;
     grid-template-columns: repeat(5, calc(100% /5 - 10px));
     align-items: center;
     justify-content: center;
-   
+    gap: 10px;
+    background-color: black;
+
+}
+.cardlar{
+    background-color: black;
+    padding: 20px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+}
+
+.card .profile {
+    width: 20px;
+}
+
+.cardlar {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.nomi {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding:10px;
+    padding-top: 0;
+    padding-right: 20px;
+}
+
+.nomi b {
+    font-size: 9px;
+}
+.tit p{
+    font-size: 8px;
+}
+.yol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: black;
+}
+.ongyol {
+    display: flex;
+    flex-direction: column;gap: 24px;
+}
+
+.substicriptons .kantakt img{
+    width: 20px;
+}
+.boxes{
+    display: flex;
+}
+.iframe{
+    display: flex;
 }

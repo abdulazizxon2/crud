@@ -1,21 +1,15 @@
 import React from "react";
 import ChapBox from "./Boxs/ChapBox";
 import UchBox from "./Boxs/UchBox";
-export default function Box() {
+import Ikkibox from "./Boxs/Ikkibox";
+export default function Box(prop) {
+
   return (<div>
     <div className="box">
       <ChapBox />
       <div className="ongBox">
-        <div className="ikkiBox">
-          <b>All</b>
-          <b>Music</b>
-          <b>Kino</b>
-          <b>Music</b>
-          <b>Kino</b>
-          <b>Music</b>
-          <b>Kino</b>
-        </div>
-        <UchBox />
+      <Ikkibox />
+        <UchBox setvid={prop.setvid} videos={prop.videos} />
       </div>
     </div>
   </div>);

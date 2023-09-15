@@ -1,29 +1,41 @@
 import React from "react";
-export default function Iframe({ setvid, inHistory, iframe }) {
+import ChapBox from "./ChapBox";
+import Ikkibox from "./Ikkibox";
+export default function Iframe({ iframe }) {
     return (<div>
-        <div className="card">
-            <div className="videoCards">
-                {iframe.map((elem, i) => {
-                    return (
-                        <>
-                            <div className="preview">
-                                <img src={elem.img} alt="" />
-                            </div>
-                            <div className="profile-photo">
-                                <div className="flex-title">
-                                    <img src={elem.profile} alt="" />
-                                    <div className="video-title">
-                                        <h4>{elem.title}</h4>
+        <div className="boxes">
+            <ChapBox />
+            <div className="videoCards" >
+            <Ikkibox />
+                <div className="card ">
+                    {iframe.map((elem, i) => {
+                        return (
+                            <div key={i}>
+                                <div className="yol" >
+                                    <div className="chapyol">
+                                        <div className="card" >
+                                            <iframe width="968" height="600" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                        </div>
+                                    </div>
+                                    <div className="ongyol">
+                                        <div className="card" >
+                                            <iframe width="200" height="150" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                        </div>
+                                        <div className="card" >
+                                            <iframe width="200" height="150" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                        </div>
+                                        <div className="card" >
+                                            <iframe width="200" height="150" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                        </div>
+                                        <div className="card" >
+                                            <iframe width="200" height="150" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="author-vines">
-                                <p>{elem.author}</p>
-                                <p>{elem.views}</p>
-                            </div>
-                        </>
-                    );
-                })}
+                        );
+                    })}
+                </div>
             </div>
         </div>
     </div>);

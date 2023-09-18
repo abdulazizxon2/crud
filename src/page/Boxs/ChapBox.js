@@ -5,28 +5,38 @@ export default function ChapBox() {
   return (<div>
     <div className="chapBox">
       <div className="birBox">
+          <NavLink to={"/"}>
         <div className="pages">
           <i className="fa-solid fa-house"></i>
-          <NavLink to={"/"}><h5>Home</h5></NavLink>
+            <b>Home</b>
         </div>
-        <div className="pages">
+          </NavLink>
+      <NavLink to={"explore"}>
+      <div className="pages">
           <i className="fa-regular fa-compass"></i>
           <h5>Explore</h5>
         </div>
-        <div className="pages">
+      </NavLink>
+       <NavLink to={"/obuna"}>
+       <div className="pages">
           <i className="fa-solid fa-video"></i>
-          <h5>Subscriptions</h5>
+          <h5>Obunachilar</h5>
         </div>
+       </NavLink>
       </div>
       <div className="birBox">
+        <NavLink to={"/kitob"}>
         <div className="pages">
           <i className="fa-regular fa-file-video"></i>
           <h5>Librery</h5>
         </div>
+        </NavLink>
+        <NavLink to={"/history"}>
         <div className="pages">
           <i className="fa-solid fa-clock-rotate-left"></i>
           <h5>History</h5>
         </div>
+        </NavLink>
         <div className="pages">
           <i className="fa-solid fa-play"></i>
           <h5>Explore</h5>

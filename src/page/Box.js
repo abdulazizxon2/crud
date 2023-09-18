@@ -3,7 +3,6 @@ import ChapBox from "./Boxs/ChapBox";
 import UchBox from "./Boxs/UchBox";
 import Ikkibox from "./Boxs/Ikkibox";
 export default function Box(prop) {
-
   return (<div>
     <div className="box">
       <ChapBox />

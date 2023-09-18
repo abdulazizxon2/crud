@@ -7,12 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .kontener {
-    max-width: 1440px;
+    max-width: 1465px;
     max-height: 100vh;
     margin: 0 auto;
     background-color: #212121;
     font-family: 'Roboto', sans-serif;
     overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navbar {
@@ -143,6 +147,7 @@
 
 .chapBox {
     padding-top: 10px;
+    transition: 1s ease-in-out;
 }
 
 .ikkiBox b:hover {
@@ -166,17 +171,19 @@
     text-decoration: none;
 }
 
-#check {
+input[type=checkbox]     {
     display: none;
 }
 
 .card img {
     width: 200px;
 }
-.videos{
+
+.videos {
     padding: 10px;
     background-color: black;
 }
+
 .videolar {
     display: grid;
     grid-template-columns: repeat(5, calc(100% /5 - 10px));
@@ -184,12 +191,13 @@
     justify-content: center;
     gap: 10px;
     background-color: black;
-
 }
-.cardlar{
+
+.cardlar {
     background-color: black;
     padding: 20px;
 }
+
 .card {
     display: flex;
     align-items: center;
@@ -211,7 +219,7 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    padding:10px;
+    padding: 10px;
     padding-top: 0;
     padding-right: 20px;
 }
@@ -219,10 +227,12 @@
 .nomi b {
     font-size: 9px;
 }
-.tit p{
+
+.tit p {
     font-size: 8px;
 }
-.yol{
+
+.yol {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,17 +240,148 @@
     padding: 24px;
     background-color: black;
 }
+
 .ongyol {
     display: flex;
-    flex-direction: column;gap: 24px;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.substicriptons .kantakt img{
+.substicriptons .kantakt img {
     width: 20px;
 }
-.boxes{
+
+.boxes {
     display: flex;
 }
-.iframe{
+
+.iframe {
     display: flex;
+}
+
+.fa-folder-plus:hover {
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-bell:hover {
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ongnavbar img:hover {
+    cursor: pointer;
+}
+
+.explore {
+    display: flex;
+}
+
+.cardsh .videolar {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% /4 - 0px));
+    gap: 10px;
+    text-align: center;
+}
+
+.cardsh .videolar img {
+    width: 90px;
+    padding-bottom: 60px;
+}
+
+.cardsh .videolar .videos {
+    border: 0.5px solid rgba(255, 255, 255, 0.164);
+    padding-top: 100px;
+}
+
+.obuna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 130px;
+}
+
+.obunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.obuna img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+.salom {
+    display: flex;
+
+}
+
+.ongsalom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: black;
+    width: 1265px;
+}
+
+.obunachila {
+    background-color: black;
+}
+
+.ongsalom .ikkiBox {
+    background-color: #212121;
+}
+
+.padpischik {
+    display: flex;
+
+}
+
+.history {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 600px;
+    gap: 24px;
+}
+.kitoblar{
+    display: flex;  
+}
+.fa-clock-rotate-left{
+    font-size: 75px;
+}
+.fa-user{
+    position: absolute;
+    padding-top: 200px;
+    color: #000;
+    padding-right: 45px;
+}
+.fa-notes-medical{
+    font-size: 75px;
+}
+#voyti{
+    border: 1px solid;
+    padding: 8px 15px 8px 35px;
+    border-radius: 20px;
+}
+#voyti:hover{
+    background-color: black;
+    color:white;
+    border:1px solid white;
+}
+.pages::before{
+    background-color: #212121ae;
 }

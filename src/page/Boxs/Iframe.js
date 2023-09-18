@@ -14,7 +14,7 @@ export default function Iframe({ iframe }) {
                                 <div className="yol" >
                                     <div className="chapyol">
                                         <div className="card" >
-                                            <iframe width="968" height="600" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                            <iframe width="967" height="600" src={elem.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                                         </div>
                                     </div>
                                     <div className="ongyol">

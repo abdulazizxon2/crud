@@ -21,10 +21,10 @@ export default function Navbar() {
             </div>
             <div className="ongnavbar">
                 <div className="icons">
-                    <i className="fa-solid fa-folder-plus"></i>
-                    <i className="fa-regular fa-bell"></i>
+                    <i className="fa-solid fa-folder-plus" title="Saved"></i>
+                    <i className="fa-regular fa-bell" title="News"></i>
                 </div>
-                <img src="./img/User-Avatar.jpg" alt="" />
+                <img src="./img/User-Avatar.jpg" alt="" title="Your profile"/>
             </div>
         </div>
     </div>;
